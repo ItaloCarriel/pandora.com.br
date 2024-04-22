@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Aniversário!</title>
+    <!-- Adicionando o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/canvas-confetti.min.js"></script>
+    <style>
+        .card {
+            margin-top: 50px;
+        }
+        .carousel-item {
+            height: 500px;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <!-- Carregando a biblioteca canvas-confetti -->
+ 
+</head>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center">
+        <div class="card shadow-sm p-3 mb-5 bg-white rounded" style="width: 30rem;">
+            <div class="card-body">
+                <h1 class="card-title text-center text-primary">Feliz Aniversário!</h1>
+                <p class="card-text text-center">Espero que você tenha um dia maravilhoso cheio de alegria e surpresas. Que todos os seus sonhos se tornem realidade neste ano que começa!</p>
+                <div class="text-center mt-4">
+                    <button id="loveButton" class="btn btn-primary">EU TE AMO!</button>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center">
+                Com todo o carinho, <br>
+                seu companheiro e amigo.
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container mt-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPo_yoYR7OrwKwrjw0OJhkY9MC8NjUHS4fvaszXSgE_3ktymyAEAq-r1Va5Nzam1zGHUfHv4c0N3pXsTR_R-nOVNSDrx4WdZcn2T1nvaRXEMTGRh34Tr9DgNIwkn2N8Cy379G7Zn8PR_zPdApZo-nskbp63g7i26zJPDuM1OCoWEBlaYminfXxtH_y267_Vl5RsmrbrIxPCUgHI6bPLTvzW8527TG5YsTEU6L1Gnjl4W2PnvUtLqDnwez1W2B49YGo98QbaInAkWTZOxdjcvIEiVrLmpj99ODkc3VxsTORxWcwDUPTJFC7KpTpzuawBGwSYOSaxBDICoIZXGN64nchXHYwoRqcWfuPc72GKb7rYSK_IgBMsumXLi5rJ8M-RQ6amRBkyqu0cLdyreIEq1PIBebiTFJKo5AECSl8E4nau2F3rZuQgRdS_5IN_N1tT1t98BvKZPn4SyPzA5-umqv6k_e-cwedr5WUswYyyHF1ca1sTmjCkPuyVpe5sgJPmU8GQEegf3GUY9S4C4ubSnjDIZ9i2tSpx_zg6Zbk4sldLAwaNiOO-amFq9SF7dpLaXLRg6iUN8DqNuNipQ538agdH2GvoVRBuMrMlYEjzAp3XWyXdck-o_ZgOfs3vMsQW_WiMDdLESTV2htcAx5pS56Dc6ZyoxvBGNfKCMkvuTjOrjy_sjRYwOJ_HgPpnmCpdBwsAIVSYhHLOxOVnWMOVfCvPMtQxeD5iqJnUBMasV1FfPEFDK1IevIsCNKcg4KvcQhW7-KhqUzn5uHZyBcnjkvMvOfBJuLkuEVi3aZxgY1JtNlTdNLKKBYtI3pvIChUQnIT01e8F1HqYMGvlB3rlI61-zU2KJwntWVP-imfJZMVx6nQexeKflxXo7n-wb3d0yy2Y9AlmE6jfu9-LXIbmuUVIm7ABVmMcpEWSdp5Kz3jdWBRtIpGAPVbhcWWSsvA=w912-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                     
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNZnxHRPEH1DfUu61zGq75dRjYAGar9osd3iTnAEQfOJMTU2YGCeuPzQp7nT0uMjNTDCCUkKUStqeWHlscOqMjYkrtbe9z6uVe4caUpQPEkxA7-akTD1kLqyLLU_G_cZWM6SMCrTeGpXGBZG_goew5Gn8yVuXImYcMqPBXI8xrlX4wyu-x-wSDHJchIursYD1_2rtMwre9F7H60GVrU1qoHAD6N0c6CiwZOCLBmmeOa9UXwwKoII4K7HdMA3bqIccXYgCj4s7Fp9xrweaDQ-ch4KLm5ggyeEfmyRTpSuLfJrtG7rfGYKxeraVKSa8Xy5BIBInlRpgCj346db9muOZ1QPh3RimzG-OU9a0qtZcPMeelwY_1xiXs-fIJQLV67AJTOOinmuvsDgKtEbFUlHtijd8Ch9RaPiKc66zdShpOB83dGbrXK5P1dPvfCV4NPPFnC0lbvrUaU8YkE99s3R5H5THlG00ZEXp_ogN3O9irIWTDZeVeNuEkEuuouvVaHfeof5aRM6wTfHTUW87qbfEy2HvkSgjk5EyqRwtwvEQm7YuzCETgffC4knTTbtRrmFWldiRFKRW7e4h6GHtMglfxXs4FHLwyvTuFfwZlRQCdh2wbNBaYaNvdmWzriI_01NPvu89hsO9LeY6tfGr0L8E8TwBUtpVBeiMs20D8ZifxBsvgnSp6oYq9Axw55ThWh8E58dhZoa6h0w7sMI17JwlUEotfU0ViCJjLuM_FRarEBWaWb-Lkk2k_k87BVYPQg3sB6WVBAIRDCSeCKOAYM8fWcnM4plm6I0bZnFBmHhBnuy8ypzLYZlV185PU8BrAOFp2KObyo_eMJ5uUC5tEMLGViupAG7KHFYRotiILmmeDoPVEog79nCkXzdJk5tXpoljzmWsACRmwuSxunJQelMWm1eh3J_uoK6zq54uhbYWdQvqZek4D99D_myilNv-o=w1079-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczN9olKQt68WhhUv6BRxgDMwHh2rFx2wzIHTGBVJDn179CVa7QSZtafRD8clUX-SynMkwTBEFvbjjJe4MRYmn5XVWiTJ15vXFihVRQ9x0GisbuwzQrWMizt4v_K434ELJ_0DyRt2x8E-pzsCsanBAESXPffH1RuWvn5BN6Z9qsd9_9GDhKvm4qvm-C2CR_RRrwK05jFCpqayS_OwTtZe30z2rGaWiRb5BBvwPm2hoRABZpUJXCkbPmkiPdrWj4ve_kNiuL77HhCOlR5IfawwmkYIxWEk6Hb16b09BFtiQwFJohLBpsXrSqdufutEGHSmTK5n1yh9FoUX43DPGFQneqqlEo8nE3x8F9jwNbdab77xHUESMbL3QiJpavVwRJBzeSpKl8okzjJ3oafTyMABiXoK05ryzX4YTr1f0bhiI-uxQqnr7Va2cvuLWn7R31jIbBJtF0WmsXIj3z4HmC7SZq5o7hS0bp_8isQ4OnaBlIlX6baNb6C1EFGqyEuT-V0brxB69RT7VueuyIEArqk-w2BVONpMdI9g71EPYuW9krjobP17H6v7dd-RFZ65j2fQkALRxZmWAJcqw2dqdvmdXHjt4_K5g8ZqIIURr7JnoE-41sAlUx-3qjcQyH7u5pUhlCGq8pvW-oftDRFaYBBRdHogDFgn41HbWfpTo1RenWTO4ZdL24lVcITEw7xE8z2S-6MrYyevkDeWyoO5n5db_zqnEGuUfem-YmUGOCK3cSk7oIdPmKzOHS4OVujoBHP57Urax64BkyolZdqaV3PvacyNDRuk37M1DFAlYpf5Ln63uLYbfaVzR2Iui37zB7NpH02LEpJe7UrhUAQAAxCGi9BquLqUxacdLNL5s9jlIGAQ-t1d9tEJvTrOcukMNaEklI0noHiV7jj_xctbPsPoJiA8lvoqOIMM1t5DPnNL6HhZSv5IDCMIyW8jrvov8PY=w455-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNaMjDyU6aMlyYXdKD_Dr1nyFQ_XPciHuJjHZ-bnN-VqVA6QT1AKnCE1nDFn83tc4B4uPGK0WVZ1SC-t14OFfBltyfbWbCNeNnWIzUIgejMivO7O-qDmJcUSiFZFB42ndTlef85v7sgzYVZI4qaOllAxhBsqVmWqh2URo3RyOjR7ahpkCVRGDvFUKSvHDvV7_VshYxXC20rCEH1s7xXQqFkTaRX4YYSA6XnWpgHD56C70spl4nvOX_AwWFk7EY0lZf2UC90BbhKkqeINqhkU5N-zx11KNZPjM9QLakV4msQ01yq4yEQpdrtRtENgxZQRSyXgXFKjeNrfpZV0hSeeu7otqbzsIxKPKQAktg-4scdiuYuanytKwvMQIgH72q6J36jVgmv7_MwuSIp2rrZ6tIrbztXBACERWlhEcBkb2stJcthsQHScqhPgNEAy_BV0LODI194IXVld3KywfxTDwh8sj2cpLBP2PrcaLc5IA3yW9lK71htTYIZLt4otgJGpcXzI1-IktcVPgl7KnTCni0DlhJW0-ykpOUc2BUwn630AraJppc207nzWlM1n04T-W6wPbrZEA0VDnfOOMW3nrLjMm_Sx_r6NSc7bXvTu_tpr3XSY6qpSL9RadBDjaqm5IF6blUH6pd6M9Jr-BdUfBH9yo32o98ALYArKYf3O-dsYqn0vnh2IXivCWjDOT9FMZUwMVLiJKNK2oBGXJUJSAkqylJfm23EsZuVypaFYDcc31P8w-2s2k-Q7xm8cu3RNLCNmQP52I74hEhaaOyWWqKF0t6zYfXpNIEnUDHkDVczqKrrz1yLKwBBzaX-ag66ZWO9BYQ61KMClDG2lM0s6shzKBb1glboPbwi5aNKI7gxkuKaGjU8bHufOge4_SimFpdv583x7x2HQxUhfx-s2hGZWUJo5_xdv6tPDMcU9cZmDSGYWC1yTZ_qMKY3LI4=w455-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczO4OAqfBsCOUjLW4SLZwGXLCKJhzE1NEqa23p4vNYpRdxHOaWOeBfbEYbKxP0OWkpl1Z5obf36TvaBYeJhieycYZWoVi0F9qG2mcu9taW787PDelP3bdhqw-tdIs4oLAF8fJpyVqJbqiDDE7MASJvPVAnAbZRMFv1KVMmbhd-UGYslHRbf5NkV4cJ9nneIJqSa7-oZQ-OQcRRjnPZ0RpAiqCHq5bonNSII9ijgM8moMTuTdwMohK1zAwCCXJtSk1ty2gL_ZRntGZwP-70zSphnLJ9u4FWHYJd34hn9Gsnh7tD9ZfrlNuogB7ruPuZe43kCNJdBnQ1-rdSdFM7lbDXChnCEF7HlXk81RgtNfy3KfkyHRi6qSg2_nggCAwDy4_E0ak1JjD4ID0iCuF9qK7P1s9SMGnFd2H5GDHRBzcIgu_20-8uYP0ADFfgyf6KJqgR2oPzxTWtWd--ZUFVhF7vNB2H7YM5GD8oycKQ6alKOCnWntsvZ7md1gsxVKfuiF-V63XLMUPpmanYaje3sKWGPyFuOlt25LczmxAR8-4T8pE7tvE_jDbybaeiQajWuiNCIwDN574TFoeU7ZdMr1r-aByc9BBnN6-5Nc0Z2fn2kuU9ZuRsfaCSZAoJ-Cov60nJQjuhscUqUWIO2697qvraJ2iTAfgLAEuw8Y8dUBE_u54b6w4GeVCm14MvrJfUipt9JZYK_OVc-Lpi-H4FiR6VArx5pSdi9evZNbOEEbjU1Bc6ZhvLywoj3kKOILHmbZ81_BukM_cDrmFj8CYRBW43KW0EmETH50qk3e6W2Aus0-o23L8A-QfQaP2nPa7fh21WD5tdvcbNRKuDheQrRQme4jJtuPaIfVzRU-1kB-_8yre_2coqGiBaaxgM4UP8sFzhwcnO5Wdd2K_OtDTu-4dvBWwsrF_33Gdghmw5wpSaRsD3USkJVis1bLdGugbgo=w455-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPL-KG3BmGTa2xosiLFWIpmBrsfqdqwe-d1xQ0H88bO2U7VKStUQ98pmYEhbpO7vKDERSVWQujHlzqo64MO8fufIt_MGd9MWKsTBJlNYa7f0cilBJUYm740EUWY64lqMH1EHmEdEGVt08QweHCJ8WMb8iKGJqgnG_8QMCZm-yYB2pS0cG4H9iGULIfTtOKX8s6d7I1U58rtuaUkKs3DjOVgbp0JS-6qbqCo0SyOrp61jhSf32g7MCJ1DMF5vEnTd9BQyeWwTzQWupXel2IPs-YuXaMLbw78OZUbFXvjY2H3QNK2jArIBnWxQUIBMl8XXznFhKzJvfPYezU_9j5K5tEGg7NdddWw71NYezs9x8XkER2SqQYtU_S8gQOCK9klVEELB8Ev8EzVlfA6YbDmAGMxoCe5UpYoABm8LbVcJd1mbFke_7JImpn044XElQl5upjqGbCuL4-LyeJPiK9GbU6baGXxKlFKsdemPYvHYx5Hi8mciw9Cdf4joJLS95v-6Q8RtJl7mINl4I_5WtGcKIh319GabUU6dYN2Oyy5mjaC6RdhodspCofAH_KC2qnM_60BEdEZh5DxiR9A-uYNGJGkyxO97YQl84MVvbHd6Jj34t73BBSkuXV76yVfhbPdJV8xRNkwE5o6tBmzaZgo5ht7A5WpViRzGRhQxOzim7UdakivaT_s5RF1MO87bDivm_pDcwSvTkyRM7QQHGt9nSpcDa_vdCXOy8I5HzTEiwilt11mDFrHYkknRgK7pQTDqT5cnhEiAkMuhRYup46pszRz1yYyFgax_SToDH5I1LT1tmmgawtqSSDE_WlE-irsza7XqXMvCc0eGZ8NKAcmGWXlcTyN0shfUKyH9uE2I227-YniGZif-6PZ17CRD4G5NWQvUIUUY4v2qRr24Qgu--yfxZWAP1yUzpU1_Ko2abYC5UDrbBQPQAGIXrSGffY=w455-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNWrfD947OAwWvaL1V8NUVcMSTmbxan5LxmqWK4SnEF-Rn2GtRAia44QzqQk886MYQFbsX-Jo3TKYgrSoOLGJfAeatW2WJNxKB690feedkonUrWzxbHCs8H-IfxuitrXP7rQ-JVjL1Wy4szImkh6nuXuSMKPIyf6febRKGbnIIZvGVHzxeugfr5H75cI6tqlZo3TSCNdvqDZ4V2Wykweg1z0rEQi2TPQ76pmBllsauFkwfqxOK9bSjYSuCFjL4aa-auebhc9ip0ZHddHn8UvrzvRXf-m56fV5LjUUFlzQ5TGID5MlSx_lpKwK7VoKnn4DAMkswB-JXAiWQTTWnw-pbv8vbZRoT00y-i7cpDU_VgW-9lnsgDEKensxiWb6objLMbvoL5oqUc57bB9fkTWne0FukkL9SbUK_9XpUPTYFRoVxLYr5Os13fxz6ikeBJbCkRy5LLhODRrjmtTkWlnpHxMI1qrG3_Ef2JJhGqT3yynzLVRYe9sacGVjTB6YU_nOOnHIEnCRnZr1xc_-bOBc5S_VJAPkJOnbNF3LYyDjfOSUE93cKSylYoD_EOiDo4yKWQ9CegN8xiRWtwVZV9dj2PA-7UP_4Q4jNPUPUOlM7ukeJ16V-uQx7LYJQbRzP2t7zFN1-5Na54RpNo4t9sqxNRWmzQj0cuCQMs6mdbrWC3tbJK9iE9q12NJJIgiDSUXkQRbQteH1TMDpJj3oxzdf_o7H6_n2JHxsBwi-WbMB5uy1I87g6h7xgNzGKKYrchg2xUgnSmqMYAc5GxTl5dVlAU2O1gaMLDLRt9_8GMSx1wUwulECZjdu6OH7JJ5rKcZzEuZUCVrmsa3UnB7vPkvhHlL5nL0MaAKqWhNedanijmw2cumdPwi5Z5S70WFEa2W2yHEfhbDFZJbLNFJZ9aKJ9Qh4UJK7NlO1GomCKILb8gc3kVZ_GHy224UHd7SdM=w341-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPnuR78_12HllMSky9cdffdGc_nX62zKCd53dfu32Y0n9uD1w6OUGUPx982WYhcOJR_RPzCUV5B5ThyaF0_wRv5G1MX7RUvOdAiWzYC68Mtvx1Gy_9czLHovW7cJp3ini0tC5HUMZpMNFql4UnnsUVLPwSLe8AF9CAWWwbO9UmZLQkD4EcUPkufadcwmbSSs_ny0hzLYFp28A5J4AboBV3kWv6QxNt2ckwqKscXljNhSktRf-85Mi93KItM1gEgHEE-yeOr8oYdjwfhQiNQWBaFBGzwevvTpqyGPnnD8Rg_htpJwiaqfZXt2Bn1n_WPSaDv_4lrHLSdeF_gMP2v01m8gn00EMpoMeNxQ68jCss2l9PUbSXh-PMbiv3C-eKhuAtxB-fT0j5FJcHU5hspdhponzNmkfy4dve1vORAYgDzUVFHqv758dVAQ8nvKIZdXL--oIUPkis4pDTvZxG36mCo3vih_gq6fzRbLm2kvDDLZXWR6njWdM8TQSNKHLS0UrubkMme1JW44_pyTYEKgKOz7j7-EUBfF3m-PYAli5h0ZRc6qiA_Fa7MadeBylpOt1y926m4i1D_IbX_Xk7MRtC0tRP59eN5ggJt2Mx8YRP5pX5bKkkgRAWia6IZV51PBN3yE6dyWDa1znYkJLfQFz0Mo8rNOPGqnuUKlLSx3A_ikQZmpaPqQLNQzFzkp0DaGxk3V3ge0VVCY-gQe9hNnxzPv2ge-BEhvqqMo72B06OVeuDyW8BBSWg1-nssOtZMkVsCrLtu6BXrR1eAXFdpeN371z-s5yifVy2I6hIo1La2DCDH-9PvPWCabTzq74lA8v2pFs6i47JeupgHwawolAuFqJXmaZxuTXAg_xXKAF2nrmGY-pZeMPpsyHQUS_-8ETFIqCn2Ar6cWKZT25tswuPTE9kzjRye3r3RaQTewBHC4w1HzVhp_n-CAFg_5pc=w341-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczO9jkYB-CI10CVENcU1dsEG-rA0ZcVEwLUXzLS1IaupzwmWkwDBo6xDY41JmT4u36xTNEE643F8qYXfBd78yjdKfShuX96v5Md9g8fIYvixOJ9xtTMo30E0-UHo1NOATebZZmArFe751_530meHlmG848v-NFQD2abF_P0OO7w91RbQCcy4cUuUSzbkXmGIxY20wRcmnjSE2cj1xn2d2s8mzyJVrzY7_pRT3q7wtoHUtzqP6YpfsBgOXSYNbbRKI2DWLUNadevAFj6dHLBuQg2vp1Ibipm_YEOPYrDkSmcO2JINjBuSQIoG1f0tDfeu-phTTe3J6pWLOumthvmIXTyFdylUkk6cKdfPU7TebomnqhDY8Ab1TUZjDLqbs5Wkr47xyR4S8BGawVqweUh_cbGlzaPXhvv_lKKvwxxRYyGABpnAzBktOhtGYzE6ygWIlYnHinMDs9J4edrWuu8ATiN6oVq7CBEvWLmAwLj5k4kPX6_FhUHtExOsEvdlh2rFlYAkmw5zXK30h4hh_pydq-VzzQ_rbzrk2HDNQ-Vu3sGnjLBn3kHbWwl8CmiJVDoeNkySeRS7hGQbnVRdcgU3bWzW_opUMElWNhihDWMWUUp9-YTCAU4ivXS2QEoWf6VTUdYNf6eP1XC6P7R3Z9IsWO1q8tu9l0NbuRkFc-YVhgWJwrTGzmoofUyhqzRm1cFo4nB7T0LzQ6h_C4rmj_54ZNr9_G5OADBtdz1kOPbfo4DRHFvu0boh37dF6SSBEt6xfvjxIxWkNPnfuweJwg67xKFtphHRG38ApxtBo-eS-95-s2NLYewwm8H3muQbbpYMJx8MadFJ0wa4ncUtEEjK8ETxPclVHRwWBdsTAJkk7EA00smqwbXEQa71dkk84A6Mf2TZ6w9oY7yihymkRVWK8GiUx0BjeaThsWvtL_VkD__NuQ8hxy-bc-INRRsaBcQ=w341-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                    </div>
+                </div>                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPyLEMBHLd_G7cApAhtBIGRvPC1CqDOZOvVvfKsV4778NW84JfRh-0eVOrht8zqd4HXziYx6QvT_ATdROwDonz3_eyguRd0XK4WXBPTBxSaYOtAoIgjE9lbS-A3ZBaVwtjcj4rCRwYP4kQxy_xgYqZsUFGWwyezIWCjOtJ1lTfProhXfYq7ucsgh8K7sFCUddGhg0c5NVNWzslCtxC7pOHOaJ38Lo9ZSXTZRkFVdmV7Ffo2borQEhCMA97NaDYKDF8sBJYe37d72y4GqQcBsErQawkvYF_jvU2YDSvcc5_HkhTYtAjsHancGQFRU18Dd7wQt9XIbo4Oz8qvmeWlISJ82SuWQVf7gPk4Nf3FKP7o-Wct3Nn2xc9cQNkTPiuUmX5wFNMKl-YYszPjZNRw0C17drU7bsaaZJokX2AC5atDZUpLeK64BUUnjAKnqSbyVMfPDbU8ERFRS5QGDVWxYHuGkTGMTJk0f9cfXSRgqRsC5YBxJXUKuj2ErqQseWJW0GvYciL08a1P20VQb0e3Iq8asYS1WsCAXwPRLEKfYjl0AZRYhDh6oGRyaaPw5MWR_uQdW-74UPCsbTQtrNC6_NxPcXiNY5YtsftJcjctPRyE97DF_R4I2OdguC7xyimOzMSbGZR2wD5WCwUbhKg01f8U9RJdvOxNzFZ60XvFyEJd1SRRy6qIW76GM5LochsJYWyAMcgveYqtIw-YUJz3CZ7LMDjX0oRJMQAEo1Jbu6zvwgf6njRMRUxuAIEJhqifey1h_xxqKLXdKe5-y5M8kHZJSxbGd6NLLaQ3E272DWV3vtptZ1izLvMtRFufoUrAXjvanUe78qQUi-DhHArLZUBo6ymwR8n7rXniDYH17cPsKAurRXlDuu0-O7wL8ZgyGBzkLyAGVjMQxXbgZAm8kdJOfBfLMYGX_P_-4AD8SwVH2c8Fza0DyEgBq7MqR3w=w341-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNMI09Yc8Dj_lYeK51jfmnTIExK418jipoTf1kFCxVnwqBOQ7qaGRAnXnrZpK8a55ecV7lPkHwWMGCtXCFr5GkSTnsMqzigT7Xn3V8Crxh3SsPhRyrz7e9Y5kVfD-O1T5VCC60VFbZnPWAfEV8Ujtp_ZrbGmmXEvScZVT40CWgW8Ap09BIOIWlsqjn-lPGFLtFt0MZV5J-vb97EbLyLG7_6DbIa2EhqgGpD4Gx-jk7zksQ7ErqOX__vuBoN8Hp5X0l6Kaqvj_Pvg4KoYO2Uii4G8lG9ePsFYBLBGY58an1P1-pLs0mO2VX2a9qLfKOQsHXDAEKNBn-EkAAPOmqgDYOiKpsv2PdyazlfIooDzFFC8ksmqCls5XD-Q3-xZKldh-Oa350Gu_oD2YYS10Ri6Ux_KCbb6j7J5q37PoAMLn0WJ7vv5qHfHPypYisrQjUou30aSXT2IKD4EfIGpSPT_MRT-zvi8esu-F6DvmkfBRAXjwjMjTuQ1IPIpyC3x6DR3ykWA1xIkxIjadi_JRKbYBsrTrqRG03l8JwvooQO2Ijhi457IudxjZtqPqyK9OYOCzf-qEO_9W1lIA2R1dQvzW6elngfXMHgleLf7k2YdMQiXeWIwKk_66GscOy5hn1i_sJ7zbZ5bBDqSDh6TT2G__PCbdLfvGOv_Ve1rMTPo9QQ78Nw-0ao8DyskLgp1ChdLJ3hnPXRoHGBhYXHuA71SeXLZW_r6wTBUnlQTPUiP7kCN6fLIhAloARWceJXxBTZDgh6I3xu7ibF3cP6gwBJzYiI-Q4dlFoLrIfToVPnqDjo6QrbDKJ6YFabYOLK-k5l1nU6b0ykt3bWo_6uj_lLozUBswVU7UhBwifIra3LLO4CnkDEjWT5X9c3NEDi1tyEHA6h2YZPegZb_YHdj9CysBL2122FC0427pCPK1rxq3EyZFHDdqS9g3QlRQ6q40Q=w1079-h607-s-no-gm?authuser=0" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var button = document.getElementById('loveButton');
+            if (typeof confetti === 'function') {
+                button.addEventListener('click', function() {
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 }
+                    });
+                });
+            } else {
+                console.error('Confetti library is not loaded!');
+            }
+        });
+    </script>
+</body>
+</html>
